@@ -1,0 +1,26 @@
+.button {
+    -fx-background-color: violet;
+    -fx-text-fill: #1C1C1E;
+    -fx-font-size: 12px;
+    -fx-border-radius: 2px;
+    -fx-border-color: #1C1C1E;
+    -fx-padding: 6px 12px 6px 12px;
+    -fx-alignment: center;
+}
+
+.button:hover {
+    -fx-background-color: mediumorchid;
+    -fx-text-fill: snow;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #1C1C1E;
+}
+
+.vbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+    -fx-padding: 20px;
+    -fx-background-color: gainsboro;
+}

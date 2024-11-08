@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" prefHeight="500.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.fuelconsumption.CalculatorController">
+  <padding>
+    <Insets bottom="50.0" left="20.0" right="20.0" top="50.0"/>
+  </padding>
+
+  <Label fx:id="welcomeText" text="Fuel Consumption Calculator" alignment="CENTER"/>
+  <Label fx:id="languageChoice" text="Please choose the language" alignment="CENTER"/>
+
+
+  <Button fx:id="btnEN" onAction="#onbtnClickEN" text="EN" />
+  <Button fx:id="btnFR" onAction="#onbtnClickFR" text="FR" />
+  <Button fx:id="btnJP" onAction="#onbtnClickJP" text="JP" />
+  <Button fx:id="btnIR" onAction="#onbtnClickIR" text="IR" />
+
+  <!-- These will be hidden initially -->
+  <VBox fx:id="fuelConsumptionVBox" visible="false">
+    <Label fx:id="distanceLbl" text="Distance (km)"/>
+    <TextField fx:id="distanceInput"/>
+
+    <Label fx:id="fuelLbl" text="Fuel Used (liters)"/>
+    <TextField fx:id="fuelInput"/>
+
+    <Button fx:id="btnCalculate" onAction="#onbtnClickCalculate" text="Calculate"/>
+    <Label fx:id="result" />
+    <Label fx:id="invalidInput" />
+  </VBox>
+</VBox>
